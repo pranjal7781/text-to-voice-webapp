@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.hero{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(images/bg1.jpg);
+    opacity: 0.9;
+    background-size: cover;
+    /* background: linear-gradient(45deg,blue,green); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+.hero h1 {
+    font-size: 45px;
+    font-weight: 700;
+    margin-top: -50px;
+    margin-bottom: 20px;
+    text-shadow: #94b7c1;
+    color: transparent;
+    background: linear-gradient(90deg, #74c7e3, #1e90ff, #4899bc);
+    background-size: 200% 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: gradientShift 5s linear infinite;
+}
+
+
+@keyframes pulse {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.7;
+        transform: scale(1.05);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.hero p {
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    color: #c5ecf3;
+    animation: pulse 3s infinite;
+}
+
+textarea{
+    width: 600px;
+    height: 250px;
+    background: rgba(96, 157, 185, 0.867);
+    opacity: 0.8;
+    color: rgb(230, 235, 238);
+    font-size:18px ;
+    border: 0;
+    outline: 0;
+    padding: 20px;
+    border-radius: 10px;
+    resize: none;
+    margin-bottom: 30px;
+}
+
+textarea::placeholder{
+    color: rgb(204, 227, 232);
+    font-size: 18px;
+}
+.row{
+    width: 600px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+button{
+    background: #012029;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 30px;
+    border-radius: 35px;
+    border: 2px solid #27738a;
+    outline: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+button:hover{
+    background: #257c97;
+    border: 2px solid #012029;
+    /* color: #012029; */
+
+}
+button img{
+    width: 16px;
+    margin-right: 10px;
+}
+
+select{
+    flex: 1;
+    color: #fff;
+    background: rgba(96, 157, 185, 0.867);
+    height: 50px; 
+    padding: 0 20px;
+    outline: 0;
+    border: 0;
+    border-radius: 35px;
+    appearance: none;
+    background-image:url(images/dropdown.png) ;
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position-x:calc(100% - 20px) ;
+    background-position-y: 20px;
+}
